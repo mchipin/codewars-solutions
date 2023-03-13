@@ -3,10 +3,13 @@
     //My solution
 
     function removeExclamationMarks(s) {
+        let i = 0
         let noExclamationMarks = ''
-        for (let i = 0; i < s.length && s[i] !== '!'; i++) {
-          noExclamationMarks += s[i]
+        while (i < s.length){
+         if (s[i] !== '!') {
+           noExclamationMarks += s[i]
+         }
+          i++
         }
         return noExclamationMarks
-      }
-
+      }      
